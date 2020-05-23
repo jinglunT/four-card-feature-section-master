@@ -38,8 +38,19 @@
     }
 
     .card {
+      margin-top: 20px;
+      padding: 15px;
+      position: relative;
       display: inline-block;
-      width: 200px;
+      width: 220px;
+      height: 200px;
+      box-shadow: 0 2px 2px 2px hsl(0, 0%, 98%);
+    }
+
+    .bottom.right {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
     }
 
   </style>
@@ -63,6 +74,7 @@
         <div class="card">
           <h4>Supervisor</h4>
           Monitors activity to identify project roadblocks
+          <img class = "bottom right" src="./images/icon-supervisor.svg">
         </div>
       </div>
       <div class="column">
