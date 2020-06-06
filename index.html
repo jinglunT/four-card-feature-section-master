@@ -26,12 +26,16 @@
     .row {
       display: inline-flex;
       position: relative;
-      top: 50px;
+      top: 250px;
       width: 80%;
     }
 
     .row.simple {
       display: inline-block;
+      position: absolute;
+      width: 900px;
+      top: 0;
+      left: 3em;
     }
 
     .column {
@@ -87,6 +91,11 @@
 
     .ogrange {
       background-color: hsl(34, 97%, 64%)
+    }
+
+    #design {
+      position: relative;
+      top: 250px;
     }
 
 
@@ -146,7 +155,8 @@
       </div>
     </div>
   </div>
-<img src ="./design/desktop-design.jpg" width = "100%">
+
+  <img id="design" src ="./design/desktop-design.jpg" width = "100%">
   
   <footer>
     <p class="attribution">
