@@ -25,6 +25,9 @@
 
     .row {
       display: inline-flex;
+      position: relative;
+      position: relative;
+      top: 50px;
       width: 80%;
     }
 
@@ -38,14 +41,19 @@
       height: 420px;
     }
 
+    .filler {
+      flex: 1;
+    }
+
     .card {
+      flex: 1;
       margin-top: 20px;
       padding: 15px;
-      padding-bottom: 250px;
       position: relative;
       display: inline-block;
       width: 220px;
-      box-shadow: 0 2px 2px 2px hsl(0, 0%, 98%);
+      min-height: 200px;
+      box-shadow: 0 5px 2px 2px hsl(229, 30%, 66%);
       border-radius: 10px;
       overflow: hidden;
     }
@@ -80,6 +88,7 @@
       background-color: hsl(34, 97%, 64%)
     }
 
+
   </style>
 </head>
 <body>
@@ -98,12 +107,14 @@
   
     <div class="row">
       <div class="column">
+        <div class="filler"></div>
         <div class="card">
           <div class="cyan top bar"></div>
           <h4>Supervisor</h4>
           Monitors activity to identify project roadblocks
           <img class = "bottom right" src="./images/icon-supervisor.svg">
         </div>
+        <div class="filler"></div>
       </div>
       <div class="column">
         <div class="card">
@@ -114,19 +125,21 @@
         </div>
 
         <div class="card">
-          <div class="cyan top bar"></div>
+          <div class="orange top bar"></div>
          <h4>Karma</h4>
           Regularly evaluates our talent to ensure quality
           <img class = "bottom right" src="./images/icon-karma.svg">
         </div>
       </div>
       <div class="column">
+        <div class="filler"></div>
         <div class="card">
-          <div class="cyan top bar"></div>
+          <div class="blue top bar"></div>
           <h4>Calculator</h4>
           Uses data from past projects to provide better delivery estimates
           <img class = "bottom right" src="./images/icon-calculator.svg">
         </div>
+        <div class="filler"></div>
       </div>
     </div>
   </div>
